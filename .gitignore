@@ -1,0 +1,106 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Backup files
+*.bak
+~$*.xls*
+~$*.doc*
+~$*.ppt*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# OS generated files
+.DS_Store
+.directory
+.gdb_history
+ehthumbs.db
+Icon?
+*.orig
+old
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# lib files used for local debugging
+/lib/
+/html/lib/
+
+# ===========================================
+# PsychoPy Experiment Files
+# ===========================================
+
+# PsychoPy data files (uncomment if you want to track some data)
+# Keep: real participant data
+# Ignore: test/pilot runs with specific patterns
+data/*_test01_*.csv
+data/*_test01_*.log
+data/*_test01_*.psydat
+
+data/pilot_*.csv
+data/pilot_*.log
+data/pilot_*.psydat
+
+# PsychoPy session info
+*.psydat
+
+# PsychoPy log files from incomplete runs
+*_lastrun.py
+
+# Legacy/test experiment files
+test01*
+*_legacy.*
+dct_ai_psychopy.psyexp.py
+
+# PsychoPy JavaScript output for web (unless deploying online)
+*-legacy-browsers.js
+# Uncomment below if not using PsychoJS at all:
+# *.js
+# index.html
+
+# ===========================================
+# LanguageTool
+# ===========================================
+# Large language tool directory (can be re-downloaded)
+LanguageTool/
+
+# ===========================================
+# Python Project Files
+# ===========================================
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy type checking
+.mypy_cache/
+.dmypy.json
+

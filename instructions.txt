@@ -1,0 +1,4 @@
+
+To start experiment copy this into terminal:
+conda activate stenv
+python PATH_TO_FILE\human-llm-alignment.py
