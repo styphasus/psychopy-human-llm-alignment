@@ -1812,8 +1812,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 f"Generate {n} short, natural, polite responses (max 20 words).\n"
                 f"Return each response on a separate line.\n"
             )
-
-            prompt = "What's 2 + 2? Just answer with the result, written as a word."
         
             headers = {
                 "Authorization": f"Bearer {OPENROUTER_API_KEY}",
