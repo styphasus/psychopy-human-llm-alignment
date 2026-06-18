@@ -1797,8 +1797,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
         model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-        MODEL = "openai/gpt-3.5-turbo-instruct"
-        print("openai/gpt-3.5-turbo-instruct")
+        # MODEL = "openai/gpt-3.5-turbo-instruct"
+        # print("openai/gpt-3.5-turbo-instruct")
+
+        MODEL = "openai/gpt-5.4-mini"
+
         DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
         # model = SentenceTransformer(r"C:\Users\Display\Desktop\all-MiniLM-L6-v2", device=DEVICE)
         print("Sentence Transformer found!")
