@@ -2649,7 +2649,7 @@ def saveData(thisExp):
     """
     filename = thisExp.dataFileName
     # these shouldn't be strictly necessary (should auto-save)
-    thisExp.saveAsWideText(filename + '.csv', delim=',', quoting=csv.QUOTE:NONNUMERIC)
+    thisExp.saveAsWideText(filename + '.csv', delim=',', quoting=csv.QUOTE.NONNUMERIC)
     thisExp.saveAsPickle(filename)
 
 
