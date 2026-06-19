@@ -1783,7 +1783,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         PromptRoutine.tStop = globalClock.getTime(format='float')
         PromptRoutine.tStopRefresh = tThisFlipGlobal
         thisExp.addData('PromptRoutine.stopped', PromptRoutine.tStop)
-        ScenarioLoop.addData('ParticipantResponse.text',ParticipantResponse.text)
+        ScenarioLoop.addData('ParticipantResponse.text',ParticipantResponse.text.strip())
         # Run 'End Routine' code from prompt_code
         import requests
         import re
