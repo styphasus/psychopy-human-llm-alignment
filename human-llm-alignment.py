@@ -1481,6 +1481,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         seed=None, 
     )
     thisExp.addLoop(ScenarioLoop)  # add the loop to the experiment
+    total_scenarios = len(ScenarioLoop.trialList)
+    scenarios_completed = 0
     thisScenarioLoop = ScenarioLoop.trialList[0]  # so we can initialise stimuli with some values
     # abbreviate parameter names if possible (e.g. rgb = thisScenarioLoop.rgb)
     if thisScenarioLoop != None:
@@ -1799,7 +1801,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
         # MODEL = "openai/gpt-3.5-turbo-instruct"
         MODEL = "openai/gpt-5.4-mini"
-        print(MODEL)
+        print(f"LLM-Model: {MODEL}")
 
         DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
         # model = SentenceTransformer(r"C:\Users\Display\Desktop\all-MiniLM-L6-v2", device=DEVICE)
@@ -1887,7 +1889,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         scenario_text = scenario
         
         print("Scenario: ", scenario)
-        print("Answer: ", participant_answer)
+        print("Participant-Answer: ", participant_answer)
         
         thisExp.addData('scenario', scenario)
         thisExp.addData('participant_answer', participant_answer)
@@ -2379,6 +2381,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             )
             # once done pausing, restore running status
             ScenarioLoop.status = STARTED
+        scenarios_completed += 1
+        print(f"Completed scenario {scenarios_completed}/{total_scenarios}\n")
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'ScenarioLoop'
