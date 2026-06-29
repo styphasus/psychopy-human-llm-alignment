@@ -1383,7 +1383,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         pylink.pumpDelay(100)
         print("Recording started.")
         continueRoutine = False
-        print("continueRoutine set to False")
+        print("continueRoutine set to False\n")
         routineTimer.reset()
     except Exception as e:
         print("Start recording failed:", e)
