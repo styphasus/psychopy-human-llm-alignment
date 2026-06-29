@@ -104,3 +104,7 @@ htmlcov/
 .mypy_cache/
 .dmypy.json
 
+# all folders with data files
+data/
+EEG/
+results/
