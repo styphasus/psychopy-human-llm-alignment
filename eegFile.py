@@ -33,7 +33,7 @@ def main():
     inlet = StreamInlet(info)
     
     timestamp = int(time.time())
-    filename = f'C:\\Users\\Display\\Desktop\\Kim-MT\\EEG_data\\EEG_data_{timestamp}.csv'
+    filename = f'C:\\Users\\Display\\psychopy-human-llm-alignment\\EEG\\EEG_data_{timestamp}.csv'
     # Queue to hold data before writing to file
     write_queue = queue.Queue()
     stop_event = threading.Event()
@@ -66,7 +66,7 @@ def main():
                     write_queue.put("".join(buffer))
                     buffer.clear()  
 
-                if keyboard.is_pressed('q'):
+                if keyboard.is_pressed('/'):
                     break
                 
                 # Optional: sleep to prevent overloading CPU ??
