@@ -1905,7 +1905,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisExp.addData('sim_medium', alignments['medium']['sim'])
         thisExp.addData('sim_low', alignments['low']['sim'])
         
-        expInfo['alignments'] = alignments
+        # expInfo['alignments'] = alignments
         
         # Run 'End Routine' code from savePromptTime
         import time
@@ -1939,7 +1939,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         alignment = Alignment.lower().strip()  # z. B. "high"
         
         # Zugriff auf gespeicherte Texte
-        alignments = expInfo['alignments']
+        # alignments = expInfo['alignments']
         ai_text = alignments[alignment]['text']
         
         # anzeigen
